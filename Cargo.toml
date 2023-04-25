@@ -1,0 +1,24 @@
+[package]
+name = "langchain"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.68"
+eyre = "0.6.8"
+handlebars = "4.3.6"
+mustache = "0.9.0"
+reqwest = { version = "0.11.16", features = ["json"] }
+serde = { version = "1.0.160", features = ["derive"] }
+serde_json = "1.0.96"
+thiserror = "1.0.40"
+tower = { version = "0.4.13", features = ["buffer"] }
+tower-layer = "0.3.2"
+tower-service = "0.3.2"
+
+[dev-dependencies]
+dotenv = "0.15.0"
+mockito = "1.0.2"
+tokio = { version = "1.27.0", features = ["macros", "rt-multi-thread"] }
